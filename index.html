@@ -14,6 +14,15 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <style type="text/css">
+      .v-divider{
+       margin-left:5px;
+       margin-right:5px;
+       width:1px;
+       height:3vh;
+       border-left:2px solid white;
+      }
+    </style>
 		<!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
@@ -32,11 +41,11 @@
         <div class="rd-navbar-wrap">
           <nav class="rd-navbar rd-navbar_transparent rd-navbar_boxed" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="115px" data-lg-stick-up-offset="35px" data-body-class="rd-navbar-absolute">
             <!-- RD Navbar Top Panel-->
-            <div class="rd-navbar-top-panel">
+            <!-- <div class="rd-navbar-top-panel">
               <div class="rd-navbar-top-panel__main">
                 <div class="rd-navbar-top-panel__toggle rd-navbar-fixed__element-1 rd-navbar-static--hidden" data-rd-navbar-toggle=".rd-navbar-top-panel__main"><span></span></div>
                 <div class="rd-navbar-top-panel__content">
-                  <div class="rd-navbar-top-panel__left">
+                  <div class="rd-navbar-top-panel">
                     <ul class="rd-navbar-items-list">
                       <li>
                         <div class="unit flex-row align-items-center unit-spacing-xs">
@@ -67,7 +76,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="rd-navbar-inner rd-navbar-search-wrap">
               <!-- RD Navbar Panel-->
               <div class="rd-navbar-panel rd-navbar-search-lg_collapsable">
@@ -85,6 +94,10 @@
                     <li><a href="#projects">Projectos</a></li>
                     <li><a href="#clientes">Clientes</a></li>
                     <li><a href="#contacts">Contacto</a></li>
+                    <li style="margin-top:7px;" ><div class="v-divider"></div></li>
+                    <li><a class="icon icon-xxs icon-gray-darker fa fa-facebook" href="https://www.facebook.com/reygar329" target='_blank' ></a></li>
+                    <li><a class="icon icon-xxs icon-gray-darker fa fa-twitter" href="#" target='_blank' ></a></li>
+                    <li><a class="icon icon-xxs icon-gray-darker fa fa-youtube" href="#" target='_blank' ></a></li>
                   </ul>
                 </div>
               </div>
@@ -103,7 +116,7 @@
                     <div class="col-lg-10"> 
                       <h1 class="heading-decorated azul" data-caption-animate="fadeInUpSmall">Industrial</h1>
                       <h4 class="text-boxed" data-caption-animate="fadeInUpSmall" data-caption-delay="200">Infraestructuras para la industria y el desarrollo</h4>
-                      <a class="button button-primary" data-caption-animate="fadeInUpSmall" data-caption-delay="350" href="#modal" data-toggle="modal">Contáctanos</a>
+                      <a class="button button-primary" data-caption-animate="fadeInUpSmall" data-caption-delay="350" href="#projects">Ver más</a>
                     </div>
                   </div>
                 </div>
@@ -116,7 +129,7 @@
                     <div class="col-lg-10"> 
                       <h1 class="heading-decorated azul" data-caption-animate="fadeInUpSmall">Comercial</h1>
                       <h4 data-caption-animate="fadeInUpSmall" data-caption-delay="200">Dale a tu negocio la mejor imagen</h4>
-                      <a class="button button-primary" data-caption-animate="fadeInUpSmall" data-caption-delay="350" href="#modal" data-toggle="modal">Contáctanos</a>
+                      <a class="button button-primary" data-caption-animate="fadeInUpSmall" data-caption-delay="350" href="#projects">Ver más</a>
                     </div>
                   </div>
                 </div>
@@ -129,7 +142,7 @@
                     <div class="col-lg-10">
                       <h1 class="heading-decorated azul" data-caption-animate="fadeInUpSmall">Residencial</h1>
                       <h4 data-caption-animate="fadeInUpSmall" data-caption-delay="200">Hacemos de tu hogar el lugar ideal</h4>
-                      <a class="button button-primary" data-caption-animate="fadeInUpSmall" data-caption-delay="350" href="#modal" data-toggle="modal">Contáctanos</a>
+                      <a class="button button-primary" data-caption-animate="fadeInUpSmall" data-caption-delay="350" href="#projects">Ver más</a>
                     </div>
                   </div>
                 </div>
@@ -149,9 +162,8 @@
         <div class="container">
           <div class="row justify-content-md-center row-30 row-md-50">
             <div class="col-md-11 col-lg-10 col-xl-6">
-              <h4 class="heading-decorated">Nosotros</h4> 
-              <p class="heading-6 text-width-1">Nuestra misión es proporcionar soluciones funcionales y servicios integrales orientados al cliente...</p>
-              <p>Ponemos nuestros conocimientos y experiencia a su disposición para satisfacer la demanda de servicios arquitectónicos y de construcción con altos estándares de calidad, innovación, eficiencia y excelencia para obtener resultados sobresalientes orientados al cliente, respetando el medio ambiente.</p>
+              <h4 class="heading-decorated">Nosotros</h4>
+              <p class="heading-6 text-width-1">Somos una empresa especializada en servicios de Ingeniería, Construcción, Mantenimiento y Proveeduría de equipos para los sectores Industrial, Comercial y Residencial.</p>
             </div>
             <div class="col-md-11 col-lg-10 col-xl-6"><img src="images/nosotros_2.jpg" alt="" width="652" height="491"/>
             </div>
@@ -169,8 +181,8 @@
                       <article class="thumb-flat item" data-merge="1">
                         <!-- <img class="thumb-flat__image" src="images/calvin-fitzerald-418x415.jpg" alt="" width="418" height="415"/> -->
                         <div class="thumb-flat__body">
-                          <p class="heading-6"><a href="#">¿Qué somos exactamente?</a></p>
-                          <p>Somos una empresa especializada en servicios de Ingeniería, Construcción, Mantenimiento y Proveeduría de equipos para los sectores Industrial, Comercial y Residencial.</p>
+                          <p class="heading-6"><a href="#">Misión</a></p>
+                          <p>Proporcionar soluciones funcionales y servicios integrales orientados al cliente, poniendo nuestros conocimientos y experiencia a su disposición para satisfacer la demanda de servicios arquitectónicos y de construcción con altos estándares de calidad, innovación, eficiencia y excelencia para obtener resultados sobresalientes orientados al cliente, respetando el medio ambiente.</p>
                         </div>
                       </article>
                       <article class="thumb-flat item" data-merge="1">
@@ -366,7 +378,7 @@
       </section>
 
       <!-- Projects-->
-      <section class="bg-default" id="projects">
+      <section class="bg-default" id="projects" style="padding-top:4vh;margin-top:4vh;">
         <div class="container-fluid container-flex">
           <div class="row no-gutters">
             <!-- Thumb creative-->
@@ -549,6 +561,8 @@
         </div>
       </section>
 
+      <!-- <section class="section-md bg-accent text-center"></section> -->
+
       <!-- clientes-->
       <section class="section parallax-container" data-parallax-img="images/fondoLogosMarcas.jpg" id="clientes">
         <div class="parallax-content">
@@ -559,28 +573,28 @@
                   <h3>Ellos han confiado en nosotros</h3>
                 </div>
               </div>
-              <div class="row row-50 align-items-center justify-content-around"><!--   -->
-                <div class="col-3"><img src="./images/pemex.svg" alt="Pemex"></div>
-                <div class="col-2"><img src="./images/Tabasco.svg" alt="Gobierno del Estado de Tabasco"></div>
-                <div class="col-3"><img src="./images/grupoNicxa.svg" alt="Grupo Nicxa"></div>
+              <div class="row row-50 align-items-center justify-content-center"><!--   -->
+                <div class="col-2"><img src="./images/pemex.svg" alt="Pemex"></div>
+                <div class="col-1"><img src="./images/Tabasco.svg" alt="Gobierno del Estado de Tabasco"></div>
+                <div class="col-2"><img src="./images/grupoNicxa.svg" alt="Grupo Nicxa"></div>
               </div>
-              <div class="row row-50 align-items-center justify-content-around">
-                <div class="col-3"><img src="./images/dosBocas.svg" alt="Refinería Dos Bocas"></div>
-                <div class="col-3"><img src="./images/Macuspana.svg" alt="Municipio de Macuspana"></div>
-                <div class="col-2"><img src="./images/burgerKing.svg" alt="Burguer King"></div>                
+              <div class="row row-50 align-items-center justify-content-center">
+                <div class="col-2"><img src="./images/dosBocas.svg" alt="Refinería Dos Bocas"></div>
+                <div class="col-2"><img src="./images/Macuspana.svg" alt="Municipio de Macuspana"></div>
+                <div class="col-1"><img src="./images/burgerKing.svg" alt="Burguer King"></div>                
               </div>
-              <div class="row row-50 align-items-center justify-content-around">
-                <div class="col-3"><img src="./images/holcim.svg" alt="Holcim"></div>
-                <div class="col-3"><img src="./images/shasa.svg" alt="Shasa"></div>
-                <div class="col-3"><img src="./images/pizzaHut.svg" alt="Pizza Hut"></div>                
+              <div class="row row-50 align-items-center justify-content-center">
+                <div class="col-2"><img src="./images/holcim.svg" alt="Holcim"></div>
+                <div class="col-2"><img src="./images/shasa.svg" alt="Shasa"></div>
+                <div class="col-2"><img src="./images/pizzaHut.svg" alt="Pizza Hut"></div>                
               </div>
-              <div class="row row-50 align-items-center justify-content-around">
-                <div class="col-3"><img src="./images/tecMilenio.svg" alt="Tec Milenio"></div>
-                <div class="col-3"><img src="./images/medicaSanta.svg" alt="Medica Santa Fe"></div>
-                <div class="col-2"><img src="./images/bitterSweet.svg" alt="Bitter & Sweet"></div>               
+              <div class="row row-50 align-items-center justify-content-center">
+                <div class="col-2"><img src="./images/tecMilenio.svg" alt="Tec Milenio"></div>
+                <div class="col-2"><img src="./images/medicaSanta.svg" alt="Medica Santa Fe"></div>
+                <div class="col-1"><img src="./images/bitterSweet.svg" alt="Bitter & Sweet"></div>               
               </div>
-              <div class="row row-50 align-items-center justify-content-around">
-                <div class="col-2"><img src="./images/kfc.svg" alt="KFC"></div>                
+              <div class="row row-50 align-items-center justify-content-center">
+                <div class="col-1"><img src="./images/kfc.svg" alt="KFC"></div>                
               </div>
             </div>
           </section>
@@ -652,18 +666,63 @@
       <!-- Page Footer -->
       <footer class="footer-corporate bg-gray-darker">
         <div class="container">
-          <div class="footer-corporate__inner">
+          <div class="row">
+            <div class="col">
+              <ul class="rd-navbar-items-list">
+                <li>
+                  <div class="unit flex-row align-items-center unit-spacing-xs">
+                    <div class="unit__left"><span class="icon icon-sm icon-primary linear-icon-map-marker"></span></div>
+                    <div class="unit__body">
+                      <p><a href="https://goo.gl/maps/KwbFRuxkpP3wJesM8">Dirección: Cerrada de Benito Juárez 329, Col. Centro. Macuspana, Tabasco.</a></p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="rd-navbar-items-list">
+                <li>
+                  <div class="unit flex-row align-items-center unit-spacing-xs">
+                    <div class="unit__left"><span class="icon icon-sm icon-primary linear-icon-telephone"></span></div>
+                    <div class="unit__body">
+                      <ul class="list-semicolon">
+                        <li><a href="tel:9361288581">(936) 128 8581</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="rd-navbar-items-list">
+                <li>
+                  <div class="unit flex-row align-items-center unit-spacing-xs">
+                    <div class="unit__left"><span class="icon icon-sm icon-primary linear-icon-envelope"></span></div>
+                    <div class="unit__body">
+                      <p><a href="#modal" data-toggle="modal">contacto@reygar.mx</a></p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-corporate__inner mt-3">
             <p class="rights"><span>REYGAR, Construcción y Mantenimiento Industrial</span><span>&nbsp;</span><span class="copyright-year"></span>. Todos los derechos reservados.</p>
             <ul class="list-inline-xxs">
               <li><a class="icon icon-xxs icon-gray-darker fa fa-facebook" href="#"></a></li>
               <li><a class="icon icon-xxs icon-gray-darker fa fa-twitter" href="#"></a></li>
-              <li><a class="icon icon-xxs icon-gray-darker fa fa-vimeo" href="#"></a></li>
+              <li><a class="icon icon-xxs icon-gray-darker fa fa-youtube" href="#"></a></li>
             </ul>
           </div>
         </div>
       </footer>
       
-      <!-- Modal-->
+
+
+
+
+
+      <!-- Modales-->
       <div class="modal fade" id="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
