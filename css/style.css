@@ -9590,7 +9590,7 @@ html:not(.lt-ie10) .not-animated {
 */
 .rd-navbar-static {
 	display: block;
-	background-color: #6A6A6A;
+	background-color:black;  /* #6A6A6A */
 	box-shadow: 0 2px 12px rgba(136, 136, 136, 0.1);
 }
 
